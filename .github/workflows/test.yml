@@ -28,8 +28,8 @@ jobs:
         
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
-        with:
-          terraform_version: 1.2.0
+#         with:
+#           terraform_version: 1.2.0
 
       - name: Terraform lint
         id: lint
