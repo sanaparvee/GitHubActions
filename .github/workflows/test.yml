@@ -32,8 +32,8 @@ jobs:
 #         run: terraform fmt -check
 #         continue-on-error: true
 
-      - name: Terraform Init
-        id: init
+      - name: Terraform lint
+        id: lint
         env:
           AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET_NAME }}
           AWS_BUCKET_KEY_NAME: ${{ secrets.AWS_BUCKET_KEY_NAME }}
